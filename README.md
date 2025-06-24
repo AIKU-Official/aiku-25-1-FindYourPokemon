@@ -14,7 +14,6 @@
 ## 방법론
 > 텍스트·이미지 임베딩을 결합한 멀티모달 의미 기반 검색 파이프라인을 도입함으로써,
 > 자유로운 한국어 묘사로 원하는 포켓몬을 쉽고 정확하게 찾을 수 있도록 설계하였습니다.
-<img width="1197" alt="image" src="https://github.com/user-attachments/assets/25871b7c-02f5-45dd-90cb-8b5519e35e2e" />
 
 
 ### 1. 데이터셋 구축
@@ -23,6 +22,8 @@
 - 이미지와 외형 설명이 1:1로 매칭된 커스텀 데이터셋 구축
 
 ### 2. Embedding Extraction
+<img width="1197" alt="image" src="https://github.com/user-attachments/assets/25871b7c-02f5-45dd-90cb-8b5519e35e2e" />
+  
 - **text embedding**  
   사용자 입력 및 포켓몬 description을 KR-SBERT((snunlp/KR-SBERT-V40K-klueNLI-augSTS)로 임베딩 하여 768차원 벡터로 변환
     
