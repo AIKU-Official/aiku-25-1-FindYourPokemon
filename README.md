@@ -39,7 +39,7 @@
 
 - FAISS index에 텍스트 및 이미지 임베딩을 저장하여 빠른 nearest neighbor search가 가능하도록 함
     
-- pokemon description에 대해 SBERT와 CLIP 각각의 임베딩을 추출하여 두 인덱스에서 top-K candidates 검색
+- Pokemon appearance description 에 대해 SBERT와 CLIP 각각의 임베딩을 추출하여 두 인덱스에서 top-K candidates 검색
     
 - 각 후보군에 대해 cosine similarity 점수를 산출하고, 사전 정의된 가중치(α for SBERT, β for CLIP)로 결합하여 Top-N 결과를 출력
     
@@ -51,8 +51,10 @@ pip install -r requirements.txt
 ```
 
 ## 사용 방법
-
-(프로젝트 실행 방법 (명령어 등)을 적어주세요.)
+```
+python3 demo.py
+```
+- 정상적으로 실행이 안될 경우 model.py에서 경로 설정을 확인하세요.
 
 ## 예시 결과
 사용자가 입력한 자유로운 외형 묘사에 대해 가장 유사한 포켓몬 Top-5 이미지를 빠른 시간 안에 이름/설명과 함께 실시간 시각화
