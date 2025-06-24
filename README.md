@@ -22,7 +22,8 @@
 - 이미지와 외형 설명이 1:1로 매칭된 커스텀 데이터셋 구축
 
 ### 2. Embedding Extraction
-<img width="1197" alt="image" src="https://github.com/user-attachments/assets/25871b7c-02f5-45dd-90cb-8b5519e35e2e" />
+<img width="935" alt="image" src="https://github.com/user-attachments/assets/fd51ff74-ef7b-49d6-8701-79a233d7947c" />
+
   
 - **text embedding**  
   사용자 입력 및 포켓몬 description을 KR-SBERT((snunlp/KR-SBERT-V40K-klueNLI-augSTS)로 임베딩 하여 768차원 벡터로 변환
@@ -33,6 +34,9 @@
 - 모든 임베딩 벡터는 L2 normalization 후, FAISS indexing에 활용됨
 
 ### 3. Multimodal Similarity Search Pipeline
+<img width="840" alt="image" src="https://github.com/user-attachments/assets/caff9b32-3645-4950-b45a-ee9e66bf7c44" />
+
+
 - FAISS index에 텍스트 및 이미지 임베딩을 저장하여 빠른 nearest neighbor search가 가능하도록 함
     
 - pokemon description에 대해 SBERT와 CLIP 각각의 임베딩을 추출하여 두 인덱스에서 top-K candidates 검색
@@ -41,11 +45,10 @@
     
 
 ## 환경 설정
+
 ```
 pip install -r requirements.txt
 ```
-
-(Requirements, Anaconda, Docker 등 프로젝트를 사용하는데에 필요한 요구 사항을 나열해주세요)
 
 ## 사용 방법
 
@@ -57,6 +60,9 @@ pip install -r requirements.txt
 ![image](https://github.com/user-attachments/assets/504553bd-316b-4bf4-8489-18be52ca019c)
 
 ## 팀원
+<div align="center">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/30a0e38a-a823-44c1-951a-e26f68882877" />
+
 
   | 팀원                            | 역할                                       |
 | ----------------------------- | ---------------------------------------- |
@@ -64,3 +70,4 @@ pip install -r requirements.txt
 | [윤혜원](https://github.com/yoonewon)     |    데이터 처리 / 정제, 임베딩 추출 및 성능 평가     |
 | [이시현](https://github.com/thissihyun)        |    데이터 정제, gradio 데모 구현    |
 | [지세현](https://github.com/sehyeonji321)        |    데이터 처리 / 정제, 모델 성능 고도화   |
+</div>
